@@ -18,6 +18,9 @@ RTL  := $(ROOT)/rtl
 TB   := $(ROOT)/tb
 SIM  := $(ROOT)/sim
 
+# Prefer the active virtualenv's Python when available; fall back to python3.
+PYTHON ?= $(shell if command -v python >/dev/null 2>&1; then echo python; elif command -v python3 >/dev/null 2>&1; then echo python3; else echo python3; fi)
+
 SRCS := \
   $(RTL)/sa_pkg.sv \
   $(RTL)/pe.sv \
@@ -31,7 +34,7 @@ SRCS := \
 .PHONY: vectors verilator questa clean
 
 vectors:
-	python3 $(ROOT)/verification/golden_model.py --M $(M) --N $(N) --K $(K) --seed $(SEED) --out $(SIM)
+	$(PYTHON) $(ROOT)/verification/golden_model.py --M $(M) --N $(N) --K $(K) --seed $(SEED) --out $(SIM)
 
 verilator: vectors
 	cd $(TB) && verilator --binary --timing -Wno-fatal -I$(RTL) $(SRCS) -o sim_gemm

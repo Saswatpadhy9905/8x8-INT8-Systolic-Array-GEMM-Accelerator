@@ -28,7 +28,7 @@ module tb_pe
 
   // DUT
   pe dut (
-    .clk(clk), .rst_n(rst_n), .en(en), .clear_acc(clear_acc),
+    .clk(clk), .rst_n(rst_n), .en(en), .clear_acc_in(clear_acc),.clear_acc_out(),
     .a_in(a_in), .b_in(b_in),
     .a_out(a_out), .b_out(b_out), .acc_out(acc_out)
   );
