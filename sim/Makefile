@@ -37,12 +37,9 @@ vectors:
 	$(PYTHON) $(ROOT)/verification/golden_model.py --M $(M) --N $(N) --K $(K) --seed $(SEED) --out $(SIM)
 
 verilator: vectors
-	cd $(TB) && verilator --binary --timing -Wno-fatal -I$(RTL) $(SRCS) -o sim_gemm
+	cd $(TB) && verilator --binary --timing --top-module tb_gemm_top -Wno-fatal -I$(RTL) $(SRCS) -o sim_gemm
 	cd $(TB) && ./obj_dir/sim_gemm
 
 questa: vectors
 	cd $(TB) && vlog -sv +incdir+$(RTL) $(SRCS)
 	cd $(TB) && vsim -c tb_gemm_top -do "run -all; quit"
-
-clean:
-	rm -rf $(TB)/obj_dir $(TB)/work transcript vsim.wlf

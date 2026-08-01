@@ -23,7 +23,7 @@
 //       python golden_model.py --M 16 --N 16 --K 16 --seed 1 --out ../sim
 //
 // RUN (Verilator):
-//   verilator --binary --timing -Wno-fatal -I../rtl tb_gemm_top.sv \
+// Compile command: verilator --binary --timing -Wno-fatal -I../rtl tb_gemm_top.sv \
 //       ../rtl/sa_pkg.sv ../rtl/pe.sv ../rtl/systolic_array.sv \
 //       ../rtl/skew_buffer.sv ../rtl/controller.sv ../rtl/output_buffer.sv \
 //       ../rtl/gemm_top.sv -o sim_gemm && ./obj_dir/sim_gemm
@@ -229,7 +229,7 @@ module tb_gemm_top
         run_tile();
         check_tile(tm, tn);
         tiles++;
-        total_cycles += cycle_count;
+        total_cycles += 64'(cycle_count);
       end
     end
 

@@ -1,0 +1,1383 @@
+
+*** Running vivado
+    with args -log gemm_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gemm_top.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Aug  1 20:23:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gemm_top.tcl -notrace
+Command: synth_design -top gemm_top -part xc7a100tcsg324-1 -max_dsp 200 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 200
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24980
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1082.535 ; gain = 537.129
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11067] parameter 'ARRAY_ROWS' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:10]
+WARNING: [Synth 8-11067] parameter 'ARRAY_COLS' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:11]
+WARNING: [Synth 8-11067] parameter 'IN_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:13]
+WARNING: [Synth 8-11067] parameter 'ACC_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:14]
+WARNING: [Synth 8-11067] parameter 'DIM_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:15]
+WARNING: [Synth 8-11067] parameter 'MAX_K' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:17]
+WARNING: [Synth 8-11067] parameter 'MUL_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:19]
+WARNING: [Synth 8-11067] parameter 'NUM_PE' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'gemm_top' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:27]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:62]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:102]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:27]
+WARNING: [Synth 8-324] index -4 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -3 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -2 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -1 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -4 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+WARNING: [Synth 8-324] index -3 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+WARNING: [Synth 8-324] index -2 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+WARNING: [Synth 8-324] index -1 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+INFO: [Synth 8-6157] synthesizing module 'skew_buffer' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+	Parameter LANES bound to: 32'sb00000000000000000000000000001000 
+	Parameter W bound to: 32'sb00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'skew_buffer' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'skew_buffer__parameterized0' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+	Parameter LANES bound to: 32'sb00000000000000000000000000001000 
+	Parameter W bound to: 32'sb00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'skew_buffer__parameterized0' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'systolic_array' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/systolic_array.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'pe' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'pe' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_array' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/systolic_array.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'output_buffer' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/output_buffer.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'output_buffer' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/output_buffer.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'gemm_top' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:24]
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  a_mem_reg with 32768 registers
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  b_mem_reg with 32768 registers
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][0] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][1] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][2] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][3] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][4] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][5] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][6] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][7] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][8] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][9] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][10] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][11] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][12] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][13] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][14] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][15] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][16] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][17] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][18] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][19] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][20] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][21] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][22] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][23] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][24] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][25] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][26] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][27] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][28] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][29] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][30] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][31] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][32] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][33] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][34] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][35] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][36] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][37] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][38] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][39] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][40] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][41] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][42] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][43] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][44] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][45] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][46] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][47] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][48] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][49] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][50] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][51] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][52] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][53] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][54] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][55] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][56] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][57] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][58] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][59] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][60] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][61] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][62] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][63] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][64] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][65] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][66] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][67] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][68] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][69] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][70] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][71] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][72] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][73] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][74] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][75] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][76] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][77] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][78] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][79] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][80] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][81] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][82] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][83] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][84] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][85] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][86] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][87] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][88] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][89] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][90] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][91] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][92] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][93] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][94] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][95] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][96] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][97] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][98] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][99] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port ld_a_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[9] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[9] in module gemm_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2004.203 ; gain = 1458.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.203 ; gain = 1458.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.203 ; gain = 1458.797
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                              000
+              ST_COMPUTE |                               01 |                              010
+                ST_DRAIN |                               10 |                              011
+                 ST_DONE |                               11 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2004.203 ; gain = 1458.797
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 129   
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 4280  
+	                1 Bit    Registers := 93    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 8     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2054  
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port ld_a_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[9] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[9] in module gemm_top is either unconnected or has no load
+
+*** Running vivado
+    with args -log gemm_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gemm_top.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Aug  1 20:25:42 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gemm_top.tcl -notrace
+WARNING: [Common 17-576] 'retiming' is deprecated. Please use -global_retiming option
+Command: synth_design -top gemm_top -part xc7a100tcsg324-1 -max_dsp 200 -mode out_of_context -retiming
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 200
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30736
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1083.707 ; gain = 539.527
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11067] parameter 'ARRAY_ROWS' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:10]
+WARNING: [Synth 8-11067] parameter 'ARRAY_COLS' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:11]
+WARNING: [Synth 8-11067] parameter 'IN_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:13]
+WARNING: [Synth 8-11067] parameter 'ACC_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:14]
+WARNING: [Synth 8-11067] parameter 'DIM_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:15]
+WARNING: [Synth 8-11067] parameter 'MAX_K' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:17]
+WARNING: [Synth 8-11067] parameter 'MUL_W' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:19]
+WARNING: [Synth 8-11067] parameter 'NUM_PE' declared inside package 'sa_pkg' shall be treated as localparam [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/sa_pkg.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'gemm_top' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:27]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:62]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:102]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/controller.sv:27]
+WARNING: [Synth 8-324] index -4 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -3 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -2 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -1 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:89]
+WARNING: [Synth 8-324] index -4 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+WARNING: [Synth 8-324] index -3 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+WARNING: [Synth 8-324] index -2 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+WARNING: [Synth 8-324] index -1 out of range [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:91]
+INFO: [Synth 8-6157] synthesizing module 'skew_buffer' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+	Parameter LANES bound to: 32'sb00000000000000000000000000001000 
+	Parameter W bound to: 32'sb00000000000000000000000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'skew_buffer' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'skew_buffer__parameterized0' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+	Parameter LANES bound to: 32'sb00000000000000000000000000001000 
+	Parameter W bound to: 32'sb00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'skew_buffer__parameterized0' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'systolic_array' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/systolic_array.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'pe' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'pe' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_array' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/systolic_array.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'output_buffer' [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/output_buffer.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'output_buffer' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/output_buffer.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'gemm_top' (0#1) [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:24]
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  a_mem_reg with 32768 registers
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  b_mem_reg with 32768 registers
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][0] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][1] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][2] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][3] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][4] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][5] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][6] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][7] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][8] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][9] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][10] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][11] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][12] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][13] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][14] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][15] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][16] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][17] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][18] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][19] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][20] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][21] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][22] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][23] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][24] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][25] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][26] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][27] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][28] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][29] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][30] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][31] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][32] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][33] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][34] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][35] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][36] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][37] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][38] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][39] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][40] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][41] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][42] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][43] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][44] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][45] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][46] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][47] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][48] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][49] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][50] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][51] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][52] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][53] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][54] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][55] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][56] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][57] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][58] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][59] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][60] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][61] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][62] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][63] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][64] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][65] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][66] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][67] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][68] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][69] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][70] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][71] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][72] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][73] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][74] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][75] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][76] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][77] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][78] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][79] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][80] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][81] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][82] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][83] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][84] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][85] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][86] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][87] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][88] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][89] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][90] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][91] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][92] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][93] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][94] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][95] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][96] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][97] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][98] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element a_mem_reg[4][99] was removed.  [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/gemm_top.sv:60]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port ld_a_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[9] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[9] in module gemm_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2006.762 ; gain = 1462.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2006.762 ; gain = 1462.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2006.762 ; gain = 1462.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                              000
+              ST_COMPUTE |                               01 |                              010
+                ST_DRAIN |                               10 |                              011
+                 ST_DONE |                               11 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2006.762 ; gain = 1462.582
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 129   
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 4280  
+	                1 Bit    Registers := 93    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 8     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2054  
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port ld_a_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_a_k[9] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[15] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[14] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[13] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[12] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[11] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[10] in module gemm_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ld_b_k[9] in module gemm_top is either unconnected or has no load
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: Generating DSP acc_out, operation Mode is: (0 or C)+A*B.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+DSP Report: operator acc_out0 is absorbed into DSP acc_out.
+INFO: [Synth 8-3886] merging instance 'u_skew_clear/g_lane[7].g_delay.pipe_reg[0][0]' (FDCE) to 'u_skew_clear/g_lane[6].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_clear/g_lane[7].g_delay.pipe_reg[1][0]' (FDCE) to 'u_skew_clear/g_lane[6].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_clear/g_lane[7].g_delay.pipe_reg[2][0]' (FDCE) to 'u_skew_clear/g_lane[6].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_clear/g_lane[7].g_delay.pipe_reg[3][0]' (FDCE) to 'u_skew_clear/g_lane[6].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_clear/g_lane[7].g_delay.pipe_reg[4][0]' (FDCE) to 'u_skew_clear/g_lane[6].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_clear/g_lane[7].g_delay.pipe_reg[5][0]' (FDCE) to 'u_skew_clear/g_lane[6].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][0]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][0]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][0]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][0]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][0]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][1]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][1]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][1]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][1]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][1]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][1]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][1]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][2]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][2]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][2]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][2]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][2]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][2]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][2]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][3]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][3]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][3]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][3]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][3]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][3]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][3]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][4]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][4]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][4]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][4]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][4]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][4]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][4]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][5]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][5]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][5]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][5]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][5]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][5]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][5]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][6]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][6]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][6]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][6]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][6]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][6]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][6]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[0][7]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[1][7]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[2][7]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[3][7]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[4][7]' (FDCE) to 'u_skew_a/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][7]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][7]' (FDCE) to 'u_skew_a/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[0][0]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[1][0]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[2][0]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[3][0]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[4][0]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[0][1]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[1][1]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[2][1]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[3][1]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[4][1]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][1]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][1]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[0][2]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[1][2]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[2][2]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[3][2]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[4][2]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][2]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][2]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[0][3]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[1][3]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[2][3]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[3][3]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[4][3]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][3]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][3]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[0][4]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[1][4]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[2][4]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[3][4]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[4][4]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][4]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][4]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[0][5]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[1][5]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[2][5]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[3][5]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[4][5]' (FDCE) to 'u_skew_b/g_lane[5].g_delay.pipe_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][5]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][5]' (FDCE) to 'u_skew_b/g_lane[7].g_delay.pipe_reg[6][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[0].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[0].g_col[4].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[0].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[1].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[1].g_col[4].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[0].g_col[5].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_a/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[0].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[1].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[2].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[2].g_col[4].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[1].g_col[5].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[0].g_col[6].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_skew_b/\g_lane[4].g_delay.pipe_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[0].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[1].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[2].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[3].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[3].g_col[4].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[2].g_col[5].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[1].g_col[6].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[0].g_col[7].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[1].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[2].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[3].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[4].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[3].g_col[5].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[2].g_col[6].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[1].g_col[7].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[2].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[3].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[4].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[5].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[3].g_col[6].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[2].g_col[7].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[3].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[4].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[5].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[6].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[3].g_col[7].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[4].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[5].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[6].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[4].g_col[7].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[5].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[6].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[5].g_col[7].u_pe /\b_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[7].g_col[6].u_pe /\a_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_array/g_row[6].g_col[7].u_pe /\b_out_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:29 . Memory (MB): peak = 2006.762 ; gain = 1462.582
+---------------------------------------------------------------------------------
+ Sort Area is gemm_top__GB0 acc_out_0 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_10 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_11 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_12 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_13 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_14 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_15 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_16 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_17 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_18 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_19 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_1a : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_1b : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_1c : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_1d : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_1e : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_1f : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_20 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_21 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_22 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_23 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_24 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_25 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_26 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_27 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_28 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_29 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2a : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2b : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2c : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2d : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2e : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_2f : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_30 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_31 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_32 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_33 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_34 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_35 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_36 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_37 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_38 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_39 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3a : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3b : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3c : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3d : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3e : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_3f : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_4 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_40 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_5 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_6 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_7 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_8 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_9 : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_a : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_b : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_c : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_d : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_e : 0 0 : 598 598 : Used 1 time 100
+ Sort Area is gemm_top__GB0 acc_out_f : 0 0 : 598 598 : Used 1 time 100
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pe          | (0 or C)+A*B | 8      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:30 . Memory (MB): peak = 2017.125 ; gain = 1472.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:27]
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:28]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/skew_buffer.sv:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.srcs/sources_1/new/pe.sv:29]
+INFO: [Common 17-14] Message 'Synth 8-5844' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5844' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:43 . Memory (MB): peak = 2017.125 ; gain = 1472.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:50 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:50 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:51 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:52 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:52 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:52 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
+|pe          | Dynamic     | -      | -      | -      | -      | 32     | -    | -    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    23|
+|2     |DSP48E1 |    64|
+|3     |LUT1    |    30|
+|4     |LUT2    |  2306|
+|5     |LUT3    |   255|
+|6     |LUT4    |    87|
+|7     |LUT5    |  1280|
+|8     |LUT6    | 11477|
+|9     |MUXF7   |  4352|
+|10    |MUXF8   |  2072|
+|11    |FDCE    |  2696|
+|12    |FDRE    | 32768|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------+------+
+|      |Instance                     |Module         |Cells |
++------+-----------------------------+---------------+------+
+|1     |top                          |               | 57410|
+|2     |  u_array                    |systolic_array |  2588|
+|3     |    \g_row[0].g_col[0].u_pe  |pe             |    51|
+|4     |    \g_row[0].g_col[1].u_pe  |pe_1           |    51|
+|5     |    \g_row[0].g_col[2].u_pe  |pe_2           |    51|
+|6     |    \g_row[0].g_col[3].u_pe  |pe_3           |    51|
+|7     |    \g_row[0].g_col[4].u_pe  |pe_4           |    43|
+|8     |    \g_row[0].g_col[5].u_pe  |pe_5           |    43|
+|9     |    \g_row[0].g_col[6].u_pe  |pe_6           |    43|
+|10    |    \g_row[0].g_col[7].u_pe  |pe_7           |    33|
+|11    |    \g_row[1].g_col[0].u_pe  |pe_8           |    49|
+|12    |    \g_row[1].g_col[1].u_pe  |pe_9           |    49|
+|13    |    \g_row[1].g_col[2].u_pe  |pe_10          |    49|
+|14    |    \g_row[1].g_col[3].u_pe  |pe_11          |    49|
+|15    |    \g_row[1].g_col[4].u_pe  |pe_12          |    41|
+|16    |    \g_row[1].g_col[5].u_pe  |pe_13          |    41|
+|17    |    \g_row[1].g_col[6].u_pe  |pe_14          |    41|
+|18    |    \g_row[1].g_col[7].u_pe  |pe_15          |    33|
+|19    |    \g_row[2].g_col[0].u_pe  |pe_16          |    49|
+|20    |    \g_row[2].g_col[1].u_pe  |pe_17          |    49|
+|21    |    \g_row[2].g_col[2].u_pe  |pe_18          |    49|
+|22    |    \g_row[2].g_col[3].u_pe  |pe_19          |    49|
+|23    |    \g_row[2].g_col[4].u_pe  |pe_20          |    41|
+|24    |    \g_row[2].g_col[5].u_pe  |pe_21          |    41|
+|25    |    \g_row[2].g_col[6].u_pe  |pe_22          |    41|
+|26    |    \g_row[2].g_col[7].u_pe  |pe_23          |    33|
+|27    |    \g_row[3].g_col[0].u_pe  |pe_24          |    49|
+|28    |    \g_row[3].g_col[1].u_pe  |pe_25          |    49|
+|29    |    \g_row[3].g_col[2].u_pe  |pe_26          |    49|
+|30    |    \g_row[3].g_col[3].u_pe  |pe_27          |    49|
+|31    |    \g_row[3].g_col[4].u_pe  |pe_28          |    41|
+|32    |    \g_row[3].g_col[5].u_pe  |pe_29          |    41|
+|33    |    \g_row[3].g_col[6].u_pe  |pe_30          |    41|
+|34    |    \g_row[3].g_col[7].u_pe  |pe_31          |    33|
+|35    |    \g_row[4].g_col[0].u_pe  |pe_32          |    41|
+|36    |    \g_row[4].g_col[1].u_pe  |pe_33          |    41|
+|37    |    \g_row[4].g_col[2].u_pe  |pe_34          |    41|
+|38    |    \g_row[4].g_col[3].u_pe  |pe_35          |    41|
+|39    |    \g_row[4].g_col[4].u_pe  |pe_36          |    33|
+|40    |    \g_row[4].g_col[5].u_pe  |pe_37          |    33|
+|41    |    \g_row[4].g_col[6].u_pe  |pe_38          |    33|
+|42    |    \g_row[4].g_col[7].u_pe  |pe_39          |    33|
+|43    |    \g_row[5].g_col[0].u_pe  |pe_40          |    41|
+|44    |    \g_row[5].g_col[1].u_pe  |pe_41          |    41|
+|45    |    \g_row[5].g_col[2].u_pe  |pe_42          |    41|
+|46    |    \g_row[5].g_col[3].u_pe  |pe_43          |    41|
+|47    |    \g_row[5].g_col[4].u_pe  |pe_44          |    33|
+|48    |    \g_row[5].g_col[5].u_pe  |pe_45          |    33|
+|49    |    \g_row[5].g_col[6].u_pe  |pe_46          |    33|
+|50    |    \g_row[5].g_col[7].u_pe  |pe_47          |    33|
+|51    |    \g_row[6].g_col[0].u_pe  |pe_48          |    41|
+|52    |    \g_row[6].g_col[1].u_pe  |pe_49          |    41|
+|53    |    \g_row[6].g_col[2].u_pe  |pe_50          |    41|
+|54    |    \g_row[6].g_col[3].u_pe  |pe_51          |    41|
+|55    |    \g_row[6].g_col[4].u_pe  |pe_52          |    33|
+|56    |    \g_row[6].g_col[5].u_pe  |pe_53          |    33|
+|57    |    \g_row[6].g_col[6].u_pe  |pe_54          |    33|
+|58    |    \g_row[6].g_col[7].u_pe  |pe_55          |    33|
+|59    |    \g_row[7].g_col[0].u_pe  |pe_56          |    35|
+|60    |    \g_row[7].g_col[1].u_pe  |pe_57          |    35|
+|61    |    \g_row[7].g_col[2].u_pe  |pe_58          |    35|
+|62    |    \g_row[7].g_col[3].u_pe  |pe_59          |    35|
+|63    |    \g_row[7].g_col[4].u_pe  |pe_60          |    35|
+|64    |    \g_row[7].g_col[5].u_pe  |pe_61          |    35|
+|65    |    \g_row[7].g_col[6].u_pe  |pe_62          |    35|
+|66    |    \g_row[7].g_col[7].u_pe  |pe_63          |    33|
+|67    |  u_ctrl                     |controller     | 15434|
+|68    |  u_obuf                     |output_buffer  |  2050|
+|69    |  u_skew_a                   |skew_buffer    |    48|
+|70    |  u_skew_b                   |skew_buffer_0  |    48|
++------+-----------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:52 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4142 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:53 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:53 . Memory (MB): peak = 2108.230 ; gain = 1564.051
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.534 . Memory (MB): peak = 2152.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6511 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2282.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5398dcf7
+INFO: [Common 17-83] Releasing license: Synthesis
+303 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:02:02 . Memory (MB): peak = 2282.051 ; gain = 1740.852
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2282.051 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.runs/synth_1/gemm_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2282.051 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file gemm_top_utilization_synth.rpt -pb gemm_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 20:28:02 2026...
