@@ -1,6 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../../../XilinX/2025.2/Vivado/data/rsb/busdef" \
-"gemm_top_time_synth.v" \
-
-# Do not sort compile order
-nosort

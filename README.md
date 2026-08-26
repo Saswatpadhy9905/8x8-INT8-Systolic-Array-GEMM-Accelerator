@@ -19,9 +19,10 @@ The core compute fabric is an 8x8 grid of Processing Elements (PEs). The design 
 The design has been aggressively optimized for Xilinx FPGA architectures, proving its viability as a physical IP block. 
 
 *   **Target Device:** Xilinx Artix-7 (Out-Of-Context Synthesis)
-*   **DSP48E1 Slices:** 64 
-*   **Slice LUTs:** 15,313
-*   **Slice Registers:** 35,464
+*   **Compute Performance:** 13.3 GOPS (6.65 GMAC/s) sustained throughput at 104 MHz.
+*   **Operating Frequency & Timing:** 104 MHz clock with a verified Worst Negative Slack (**WNS**) of **+0.41 ns** (fully meeting physical timing closure).
+*   **DSP48E1 Slices:** 64 / 64 (100% compute allocation to dedicated DSP macros via register packing and cascade paths).
+*   **Logic Utilization:** 15,313 Slice LUTs | 35,464 Slice Registers.
 
 ![alt text](docs/Systolic_Accelerator_utilization.png)
 
@@ -80,3 +81,4 @@ Windows Users: A helper script is provided to regenerate vectors and run the ful
 Saswat Padhy
 
 B.Tech in Electrical Engineering
+
