@@ -15,5 +15,4 @@
 - Full UVM and advanced coverage reporting require a commercial simulator such as xrun/Questa/VCS.
 - The RTL and testbench are structured so that a simulator with coverage support can run them directly.
 
-## Suggested next step
-- Run on a lab machine with xrun/Questa/VCS to collect formal coverage reports and UVM logs.
+
