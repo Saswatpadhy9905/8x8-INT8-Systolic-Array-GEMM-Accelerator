@@ -1,0 +1,5 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/Infineon_Work/systolic_array/systolic_array_accelerator/systolic_array_accelerator.sim/sim_1/synth/timing/xsim/gemm_top_time_synth.v,1787727517,verilog,,,,controller;gemm_top;glbl;output_buffer;pe;pe_1;pe_10;pe_11;pe_12;pe_13;pe_14;pe_15;pe_16;pe_17;pe_18;pe_19;pe_2;pe_20;pe_21;pe_22;pe_23;pe_24;pe_25;pe_26;pe_27;pe_28;pe_29;pe_3;pe_30;pe_31;pe_32;pe_33;pe_34;pe_35;pe_36;pe_37;pe_38;pe_39;pe_4;pe_40;pe_41;pe_42;pe_43;pe_44;pe_45;pe_46;pe_47;pe_48;pe_49;pe_5;pe_50;pe_51;pe_52;pe_53;pe_54;pe_55;pe_56;pe_57;pe_58;pe_59;pe_6;pe_60;pe_61;pe_62;pe_63;pe_7;pe_8;pe_9;skew_buffer;skew_buffer_0;systolic_array,,,../../../../../../../../XilinX/2025.2/Vivado/data/rsb/busdef,,,,,
